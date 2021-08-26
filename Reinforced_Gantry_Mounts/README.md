@@ -1,7 +1,7 @@
 Files are a rework from this mod:
 https://github.com/Annex-Engineering/Annex-Engineering_Other_Printer_Mods/tree/master/VORON_Printers/Reinforced_Gantry_Mounts
 
-Limit switch and Hall-Effect mounts have been aligned by the voron CAD files, they may need some minor adjustments as they havent been tested on a machine yet.
+Limit switch and Hall-Effect mounts have been aligned by the Voron 2.4 CAD files, they may need some minor adjustments as they havent been tested on a machine yet.
 Parts are the same as the original, besides from the main body. It's advisable to use a M3x14 or M3x16 BHCS for belt clamp for clearance reasons.
 
 Recommended Hardware:
