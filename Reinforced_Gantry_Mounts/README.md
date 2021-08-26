@@ -1,12 +1,12 @@
-Normal Z-Axis: (Need x3)
+Normal Z-Axis: (Need x3)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_01.jpg)
 
-Limit Switch: (Need x1)
+Limit Switch: (Need x1)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_02.jpg)
 
 Or
 
-Hall-Effect: (Need x1)
+Hall-Effect: (Need x1)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_02.jpg)
 
 Original mod:
