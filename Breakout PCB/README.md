@@ -1,6 +1,7 @@
-Mainly designed this since i wasn't too happy with the other PCB solutions out there.
+-- Currently still unreleased until i recieve my sample pcb's to review everything --
 
-Features all the inputs found on Hartk's Afterburner/Stealthburner PCB. (Found here; 
+Mainly designed this since i wasn't too happy with the other PCB solutions out there.
+Features all the inputs found on Hartk's Afterburner/Stealthburner PCB. (Found here; https://github.com/hartk1213/MISC/blob/main/PCBs/Stealthburner_Toolhead_PCB/ )
 
 Breakout PCB - Front:<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_01.jpg)
