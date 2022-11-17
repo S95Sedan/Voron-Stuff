@@ -25,40 +25,39 @@ Breakout PCB - Back:<br>
 | Molex | 2 | 430250200 | x1 |
 | Molex | 14 | 430451400 | x1 |
 | Molex | 14 | 430251400 | x1 |
-| JST-XH | 2 | n/a | 7 |
-| JST-XH | 3 | n/a | 3 |
-| JST-XH | 4 | n/a | 2 |
+| JST-XH | 2 | n/a | x7 |
+| JST-XH | 3 | n/a | x1 |
+| JST-XH | 4 | n/a | x2 |
 
 # Breakout PCB - Control Board Side (input)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_03.jpg)
 
-## Middle Row  (Left to Right):
-| PCB | | Wire AWG | Type |
-|:-:|:-:|:-:|:-:|
-|TH0  | Hotend Thermistor Signal Pin (TH0) | 24   |
-|AGND | Hotend Thermistor -V |24   |
-|HEF  | Hotend Cooling Fan -V |  24|
-|24V  | HE0 +V | 24   | Optional |
-|24V  | HE0 +V | 20   | 24v for Everything |
-|HE0  | Hotend Heater -V | 20 | Needed for Hotend |
-|5V   | 5V | 20   | 5v for Everything |
-|GND  | PSU -V (NOT MAINS GND) | 20 | GND for Everything |
-|24V  | HE0 +V | 24   | Optional |
-|GND  | PSU -V (NOT MAINS GND) | 24 | Optional |
-|FS   | ERCF Filament sensor |24  |
-
+## Top Row:
+| PCB | | Wire AWG |
+|:-:|:-:|:-:|
+|TH0  | Hotend Thermistor Signal Pin (TH0) | 24 |
+|AGND | Hotend Thermistor -V | 24 |
+|HEF  | Hotend Cooling Fan -V | 24 |
+|PCF  | Part Cooling Fan -V | 24 |
+|24V  | HE0 +V | 20   | 24v |
+|GND  | PSU -V (NOT MAINS GND) | 20 |
+|HE0  | Hotend Heater -V | 20 |
+|5V   | 5V | 20   |
+|FS   | ERCF Filament sensor | 24 |
+|ABL | Probe/Klicky Signal Pin | 24 |
 
 ## Middle Row:
 | PCB | | Wire AWG | Type |
 |:-:|:-:|:-:|:-:|
-|AGND | Hotend Thermistor -V |24   |
+|AGND | Hotend Thermistor -V | 24 |
 |AUX  | Auxillary |  24  |
-|GND  | PSU -V (NOT MAINS GND) | 24   | Optional |
-|PCF  | Part Cooling Fan -V | 24  |
-|24V  | HE0 +V | 24   | Optional |
-|24V  | HE0 +V | 24   | Optional |
-|GND  | PSU -V (NOT MAINS GND) | 24   | Optional |
-|ABL | Probe/Klicky Signal Pin | 24   |
+|GND  | PSU -V (NOT MAINS GND) | 24 |
+|ECF   | Electronics Fan |24  |
+|LED  | Neopixel Data Pin |24  |
+|X   | X endstop |24  |
+|GND  | PSU -V (NOT MAINS GND) | 24   |
+|X   | X endstop |24  |
+|GND  | PSU -V (NOT MAINS GND) | 24   |
 
 ## Bottom Row:
 | PCB | | Wire AWG | Type |
@@ -67,12 +66,6 @@ Breakout PCB - Back:<br>
 |S2A  | Green Stepper Wire |24  |
 |S1A  | Red Stepper Wire |24 |
 |S1B  | Blue Stepper Wire |24  |
-|ECF   | Electronics Fan |24  |
-|LED  | Neopixel Data Pin |24  |
-|X   | X endstop |24  |
-|GND  | PSU -V (NOT MAINS GND) | 24   | Optional |
-|X   | X endstop |24  |
-|GND  | PSU -V (NOT MAINS GND) | 24   | Optional |
 
 # Breakout PCB - Extruder Side (output)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_04.jpg)
@@ -109,7 +102,8 @@ Extruder Side Wiring:
 
 | PCB | 2-Pin | Wire AWG |
 |:-:|:-:|:-:|
-|GND  | PSU -V (NOT MAINS GND) | 24   |
 |ECF   | Electronics Fan |24  |
+|5V   | 5V | 24   |
+
 
 
