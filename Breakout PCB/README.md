@@ -1,4 +1,4 @@
-Gerbers for the latest verion added, any suggestions and/or problems feel free to contact me on discord.
+Gerbers for the latest verion added, any suggestions and/or problems feel free to contact me on the voron discord.
 
 Already had the idea for a while but design mainly came together due to there not being much options out there for breakout pcb's and to include some features which i personally might use.
 
