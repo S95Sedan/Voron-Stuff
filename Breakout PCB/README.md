@@ -1,12 +1,12 @@
--- Currently still unreleased until i recieve my sample pcb's to review everything --
+Gerbers for the latest verion added, any suggestions and/or problems feel free to contact me on discord.
 
-This design mainly came together due to there not being much options out there for breakout pcb's and to include some features which i thought might be handy to have.
+Already had the idea for a while but design mainly came together due to there not being much options out there for breakout pcb's and to include some features which i personally might use.
 
-Its compatible with all the outputs found on Hartk's Stealthburner PCB.
+It should be 100% compatible with all the outputs found on Hartk's Stealthburner PCB.
 Which can be found here; https://github.com/hartk1213/MISC/blob/main/PCBs/Stealthburner_Toolhead_PCB/
 
-Ontop of that it has added connections for both the X and Y endstops, including 5v for Hall effect sensors.
-And an output to connect Electronic fans.
+Ontop of that it has added connections for both the X and Y endstops, including 5v for Hall effect sensors.<br>
+And an output to connect Electronic fans.<br>
 Aswell as having a 14+2pin molex cable thats the same on both sides.
 
 Breakout PCB - Front:<br>
