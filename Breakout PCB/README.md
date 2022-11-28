@@ -25,9 +25,11 @@ Breakout PCB - Back:<br>
 | Molex | 2 | 430250200 | x1 |
 | Molex | 14 | 430451400 | x1 |
 | Molex | 14 | 430251400 | x1 |
+| Molex | 4 | 430450400 | x1 |
+| Molex | 4 | 430250400 | x1 |
 | JST-XH | 2 | n/a | x7 |
 | JST-XH | 3 | n/a | x1 |
-| JST-XH | 4 | n/a | x2 |
+| JST-XH | 1 | n/a | x2 |
 
 # Breakout PCB - Control Board Side (input)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_03.jpg)
