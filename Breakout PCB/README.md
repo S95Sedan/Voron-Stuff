@@ -75,16 +75,17 @@ Breakout PCB - Back:<br>
 Extruder Side Wiring:
 | PCB | 14-Pin Molex | Wire AWG |
 |:-:|:-:|:-:|
-|24V  | HE0 +V | 20   |
-|GND  | PSU -V (NOT MAINS GND) | 24   |
 |PROBE| Probe/Klicky Signal Pin | 24   |
-|HE0  | Hotend Heater -V | 20 |
-|5V   | 5V | 24   |
+|24V  | HE0 +V | 20   |
 |PCF  | Part Cooling Fan -V | 24  |
-|HEF  | Hotend Cooling Fan -V |  24|
 |AGND | Hotend Thermistor -V |24   |
 |TH0  | Hotend Thermistor Signal Pin (TH0) | 24   |
+|GND  | PSU -V (NOT MAINS GND) | 24   |
 |AUX  | Auxillary |  24  |
+| | | |
+|HE0  | Hotend Heater -V | 20 |
+|5V   | 5V | 24   |
+|HEF  | Hotend Cooling Fan -V |  24|
 |S1A  | Red Stepper Wire |24 |
 |S2A  | Green Stepper Wire |24  |
 |S1B  | Blue Stepper Wire |24  |
@@ -95,11 +96,11 @@ Extruder Side Wiring:
 |LED  | Neopixel Data Pin |24  |
 |FS   | ERCF Filament sensor |24  |
 
-| PCB | 4-Pin | Wire AWG |
+| PCB | 4-Pin Molex | Wire AWG |
 |:-:|:-:|:-:|
 |GND  | PSU -V (NOT MAINS GND) | 24   |
-|X   | X endstop |24  |
 |Y  | Y endstop |24  |
+|X   | X endstop |24  |
 |5V   | 5V | 24   |
 
 | PCB | 2-Pin | Wire AWG |
