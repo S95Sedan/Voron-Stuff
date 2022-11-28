@@ -1,4 +1,4 @@
-Gerbers for the latest verion added, any suggestions and/or problems feel free to contact me on the voron discord.
+# Gerbers for the latest verion added, any suggestions and/or problems feel free to contact me on the voron discord.
 
 Already had the idea for a while but design mainly came together due to there not being much options out there for breakout pcb's and to include some features which i personally might use.
 
@@ -7,7 +7,7 @@ Which can be found here; https://github.com/hartk1213/MISC/blob/main/PCBs/Stealt
 
 Ontop of that it has added connections for both the X and Y endstops, including 5v for Hall effect sensors.<br>
 And an output to connect Electronic fans.<br>
-Aswell as having a 14+2pin molex cable thats the same on both sides.
+Aswell as having a 14+2pin molex micro-fit cable thats the same on both sides.
 
 Breakout PCB - Front:<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_01.jpg)
