@@ -9,6 +9,12 @@ Ontop of that it has added connections for both the X and Y endstops, including 
 And an output to connect Electronic fans.<br>
 Aswell as having a 14+2pin molex micro-fit cable thats the same on both sides.
 
+## Note: 
+<b>Even though this board is made for the above pcb, it can be used with the older CW1 Normal or ERCF boards found here;
+https://github.com/VoronDesign/Voron-Hardware/tree/b1f85abf5476f425af5baba4655693a21646657e/Afterburner_Toolhead_PCB
+
+Just be wary of the wiring as the pinout is going to be different for CT, XES and the 5V line.</b>
+
 Breakout PCB - Front:<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_01.jpg)
 
@@ -37,37 +43,37 @@ Breakout PCB - Back:<br>
 ## Top Row:
 | PCB | | Wire AWG |
 |:-:|:-:|:-:|
-|TH0  | Hotend Thermistor Signal Pin (TH0) | 24 |
-|AGND | Hotend Thermistor -V | 24 |
-|HEF  | Hotend Cooling Fan -V | 24 |
-|PCF  | Part Cooling Fan -V | 24 |
-|24V  | HE0 +V | 20   | 24v |
-|GND  | PSU -V (NOT MAINS GND) | 20 |
-|HE0  | Hotend Heater -V | 20 |
-|5V   | 5V | 20   |
-|FS   | ERCF Filament sensor | 24 |
-|ABL | Probe/Klicky Signal Pin | 24 |
+| TH0  | Hotend Thermistor Signal Pin (TH0) | 24 |
+| AGND | Hotend Thermistor -V | 24 |
+| HEF  | Hotend Cooling Fan -V | 24 |
+| PCF  | Part Cooling Fan -V | 24 |
+| 24V  | HE0 +V | 20   | 24v |
+| GND  | PSU -V (NOT MAINS GND) | 20 |
+| HE0  | Hotend Heater -V | 20 |
+| 5V   | 5V | 20   |
+| FS   | ERCF Filament sensor | 24 |
+| ABL  | Probe/Klicky Signal Pin | 24 |
 
 ## Middle Row:
-| PCB | | Wire AWG | Type |
-|:-:|:-:|:-:|:-:|
-|AGND | Hotend Thermistor -V | 24 |
-|AUX  | Auxillary |  24  |
-|GND  | PSU -V (NOT MAINS GND) | 24 |
-|ECF   | Electronics Fan |24  |
-|LED  | Neopixel Data Pin |24  |
-|X   | X endstop |24  |
-|GND  | PSU -V (NOT MAINS GND) | 24   |
-|X   | X endstop |24  |
-|GND  | PSU -V (NOT MAINS GND) | 24   |
+| PCB | | Wire AWG |
+|:-:|:-:|:-:|
+| AGND | Hotend Thermistor -V | 24 |
+| AUX  | Auxillary |  24  | 
+| GND  | PSU -V (NOT MAINS GND) | 24 |
+| ECF  | Electronics Fan |24  |
+| LED  | Neopixel Data Pin |24  |
+| X    | X endstop |24  |
+| GND  | PSU -V (NOT MAINS GND) | 24   |
+| X    | X endstop |24  |
+| GND  | PSU -V (NOT MAINS GND) | 24   |
 
 ## Bottom Row:
-| PCB | | Wire AWG | Type |
-|:-:|:-:|:-:|:-:|
-|S2B  | Black Stepper Wire |24  |
-|S2A  | Green Stepper Wire |24  |
-|S1A  | Red Stepper Wire |24 |
-|S1B  | Blue Stepper Wire |24  |
+| PCB | | Wire AWG |
+|:-:|:-:|:-:|
+| S2B | Black Stepper Wire | 24 |
+| S2A | Green Stepper Wire | 24 |
+| S1A | Red Stepper Wire   | 24 |
+| S1B | Blue Stepper Wire  | 24 |
 
 # Breakout PCB - Extruder Side (output)<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_04.jpg)
@@ -75,38 +81,39 @@ Breakout PCB - Back:<br>
 Extruder Side Wiring:
 | PCB | 14-Pin Molex | Wire AWG |
 |:-:|:-:|:-:|
-|PROBE| Probe/Klicky Signal Pin | 24   |
-|24V  | HE0 +V | 20   |
-|PCF  | Part Cooling Fan -V | 24  |
-|AGND | Hotend Thermistor -V |24   |
-|TH0  | Hotend Thermistor Signal Pin (TH0) | 24   |
-|GND  | PSU -V (NOT MAINS GND) | 24   |
-|AUX  | Auxillary |  24  |
+|PROBE| Probe/Klicky Signal Pin | 24 |
+| 24V | HE0 +V | 20 |
+| PCF | Part Cooling Fan -V | 24 |
+| AGND | Hotend Thermistor -V |24 |
+| TH0 | Hotend Thermistor Signal Pin (TH0) | 24 |
+| GND | PSU -V (NOT MAINS GND) | 24 |
+| AUX | Auxillary | 24 |
 | | | |
-|HE0  | Hotend Heater -V | 20 |
-|5V   | 5V | 24   |
-|HEF  | Hotend Cooling Fan -V |  24|
-|S1A  | Red Stepper Wire |24 |
-|S2A  | Green Stepper Wire |24  |
-|S1B  | Blue Stepper Wire |24  |
-|S2B  | Black Stepper Wire |24  |
+| HE0 | Hotend Heater -V | 20 |
+| 5V  | 5V | 24 |
+| HEF | Hotend Cooling Fan -V | 24 |
+| S1A | Red Stepper Wire | 24 |
+| S2A | Green Stepper Wire | 24 |
+| S1B | Blue Stepper Wire | 24 |
+| S2B | Black Stepper Wire | 24 |
 
 | PCB | 2-Pin Molex | Wire AWG |
 |:-:|:-:|:-:|
-|LED  | Neopixel Data Pin |24  |
-|FS   | ERCF Filament sensor |24  |
+| LED | Neopixel Data Pin | 24 |
+| FS  | ERCF Filament sensor | 24 |
 
 | PCB | 4-Pin Molex | Wire AWG |
 |:-:|:-:|:-:|
-|GND  | PSU -V (NOT MAINS GND) | 24   |
-|Y  | Y endstop |24  |
-|X   | X endstop |24  |
-|5V   | 5V | 24   |
+| GND  | PSU -V (NOT MAINS GND) | 24 |
+| Y | Y endstop | 24 |
+| X | X endstop | 24 |
+| 5V | 5V | 24 |
 
 | PCB | 2-Pin | Wire AWG |
 |:-:|:-:|:-:|
-|ECF   | Electronics Fan |24  |
-|5V   | 5V | 24   |
+| ECF | Electronics Fan | 24 |
+| 5V  | 5V | 24 |
+
 
 
 
