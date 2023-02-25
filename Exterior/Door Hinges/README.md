@@ -5,7 +5,8 @@ Uses: (For each Hinge)<br>
 2x SHCS - M3x6mm (Countersunk)<br>
 4x Washer M3<br>
 <br>
-Be sure to add the washers behind the upper and lower blocks as it helps with the alignment on the extrusion.<br>
+Be sure to add the washers behind the upper and lower blocks as it helps with the alignment on the extrusion. Otherwise they tend to tilt backwards into the extrusion<br>
+<br>
 The gap for the doors is minimal and you might need to adjust them for a while to get it setup properly.<br>
 
 Door Hinges:<br>
