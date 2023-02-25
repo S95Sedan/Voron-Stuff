@@ -14,7 +14,7 @@ Aswell as having a 14+2pin molex micro-fit cable thats the same on both sides.
 https://github.com/VoronDesign/Voron-Hardware/tree/b1f85abf5476f425af5baba4655693a21646657e/Afterburner_Toolhead_PCB
 
 Just be wary of the wiring as the pinout is going to be different for CT, XES and the 5V line.</b>
-
+<b>
 As installed on my voron 2.4:<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Electronics/PCB's/Breakout%20Board/images/breakout_pcb_installed.jpg)
 
