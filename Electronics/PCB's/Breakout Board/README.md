@@ -16,10 +16,10 @@ https://github.com/VoronDesign/Voron-Hardware/tree/b1f85abf5476f425af5baba465569
 Just be wary of the wiring as the pinout is going to be different for CT, XES and the 5V line.</b>
 
 Breakout PCB - Front:<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_01.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/tree/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_01.jpg)
 
 Breakout PCB - Back:<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_02.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/tree/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_02.jpg)
 
 
 # BOM
@@ -38,7 +38,7 @@ Breakout PCB - Back:<br>
 | JST-XH | 1 | n/a | x2 |
 
 # Breakout PCB - Control Board Side (input)<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_03.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/tree/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_03.jpg)
 
 ## Top Row:
 | PCB | | Wire AWG |
@@ -76,7 +76,7 @@ Breakout PCB - Back:<br>
 | S1B | Blue Stepper Wire  | 24 |
 
 # Breakout PCB - Extruder Side (output)<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Breakout%20PCB/images/BreakoutPCB_04.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/tree/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_04.jpg)
 
 Extruder Side Wiring:
 | PCB | 14-Pin Molex | Wire AWG |
