@@ -14,12 +14,12 @@ Recommended Hardware:
 - 4x M3x16 (DIN912)
 
 Normal Z-Axis: (Need x3)<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_01.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Mechanical/Reinforced%20Gantry%20Mounts/images/image_01.jpg)
 
 Limit Switch: (Need x1)<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_02.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Mechanical/Reinforced%20Gantry%20Mounts/images/image_02.jpg)
 
 Or
 
 Hall-Effect: (Need x1)<br>
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Reinforced_Gantry_Mounts/Images/image_03.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Mechanical/Reinforced%20Gantry%20Mounts/images/image_03.jpg)
