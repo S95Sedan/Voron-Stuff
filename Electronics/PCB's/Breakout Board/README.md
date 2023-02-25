@@ -15,6 +15,9 @@ https://github.com/VoronDesign/Voron-Hardware/tree/b1f85abf5476f425af5baba465569
 
 Just be wary of the wiring as the pinout is going to be different for CT, XES and the 5V line.</b>
 
+As installed on my voron 2.4:
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Electronics/PCB's/Breakout%20Board/images/breakout_pcb_installed.jpg)
+
 Breakout PCB - Front:<br>
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_01.jpg)
 
@@ -113,3 +116,9 @@ Extruder Side Wiring:
 |:-:|:-:|:-:|
 | ECF | Electronics Fan | 24 |
 | 5V  | 5V | 24 |
+
+Board traces Front:
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_Nets_Front.jpg)
+
+Board traces Back:
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Electronics/PCB's/Breakout%20Board/images/BreakoutPCB_Nets_Back.jpg)
