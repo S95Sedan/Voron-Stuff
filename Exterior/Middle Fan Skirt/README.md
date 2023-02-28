@@ -1,7 +1,7 @@
-This mod is a rework of;
+This mod is a rework of;<br>
 https://github.com/EraserFX/Voron-2.4r2-Trident-Middle-Fan-Skirt
 
-Has extra heat insert holes added to mount the my JST- splitter pcb found here;
+Has extra heat insert holes added to mount the my JST- splitter pcb found here;br>
 https://github.com/S95Sedan/Voron-Stuff/tree/main/Electronics/PCB's/JST%20Splitter
 
 Middle Fan Skirt:<br>
