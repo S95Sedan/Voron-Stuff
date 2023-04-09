@@ -5,7 +5,7 @@ https://klipper.discourse.group/t/automatic-control-of-rectangular-heatbed-secti
 
 This code mainly started as i always wanted a dual zone heater setup, for more flexibility.<br>
 Shown below is a picture of my current bed setup;
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Software/Simplify3D%20-%20Dual%20Zone%20Heater/images/image_01.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Software/Simplify3D%20-%20Dual%20Zone%20Heater/images/image_01.jpg | width=300)
 
 Simplify3D - Start script:
 ```
@@ -31,16 +31,16 @@ gcode:
   {% set y_wait = printer.toolhead.axis_maximum.y|float / 2 %}
 
 #Set the coordinates of the heatbed sections
-  {% set x0 = 0 %}
-  {% set x1 = 197 %}
-  {% set x2 = 395 %}
+  {% set x0 = 0 %}       # Minimum bed size - X Axis
+  {% set x1 = 197 %}     # Halfway
+  {% set x2 = 395 %}     # Maximum bed size - X Axis
 
-  {% set y0 = 0 %}
-  {% set y1 = 350 %}
+  {% set y0 = 0 %}       # Minimum bed size - Y Axis
+  {% set y1 = 350 %}     # Maximum bed size - Y Axis
 
 #Get parameters from Slicer
-  {% set BED_TEMP = params.BED_TEMP|default(50)|float %}
-  {% if params.AREA_START and params.AREA_END %}
+  {% set BED_TEMP = params.BED_TEMP|default(50)|float %}       # This gets the BED_TEMP from the slicer)
+  {% if params.AREA_START and params.AREA_END %}               # This gets the AREA_START and AREA_END from the slicer)
       {% set A = params.AREA_START.split(",")[0]|float %}
       {% set B = params.AREA_START.split(",")[1]|float %}
 
@@ -60,35 +60,35 @@ gcode:
       G1 X{x_wait} Y{y_wait} Z15 F9000                                               # Goes to center of the bed
       #Check and enable the required heatbeds
           #Heatbed Left  x0,y0  x1,y1
-            {% if ((C > x0) and (D > y0) and (A < x1) and (B < y1)) %}
-                {% set BED_LEFT = params.BED_TEMP | default(0) | float %}
-                SET_HEATER_TEMPERATURE HEATER=heater_bed_left TARGET={BED_LEFT}      # Sets the target temp for the bed
+            {% if ((C > x0) and (D > y0) and (A < x1) and (B < y1)) %}               # Checks if theres something on the Left Side
+                {% set BED_LEFT = params.BED_TEMP | default(0) | float %}            # Sets the Left temperature to the slicer BED_TEMP
+                SET_HEATER_TEMPERATURE HEATER=heater_bed_left TARGET={BED_LEFT}      # Enables the Left Bed
             {% endif %}
           #Heatbed Right  x1,y0  x2,y1
-            {% if ((C > x1) and (D > y0) and (A < x2) and (B < y1)) %}
-                {% set BED_RIGHT = params.BED_TEMP | default(0) | float %}
-                SET_HEATER_TEMPERATURE HEATER=heater_bed_right TARGET={BED_RIGHT}    # Sets the target temp for the bed
+            {% if ((C > x1) and (D > y0) and (A < x2) and (B < y1)) %}               # Checks if theres something on the Right Side
+                {% set BED_RIGHT = params.BED_TEMP | default(0) | float %}           # Sets the Right temperature to the slicer BED_TEMP
+                SET_HEATER_TEMPERATURE HEATER=heater_bed_right TARGET={BED_RIGHT}    # Enables the Right Bed
             {% endif %}
 
-      SET_DISPLAY_TEXT MSG="L: {BED_LEFT}c R: {BED_RIGHT}c"                          # Display Heater info. (Debugging)
-      G4 P5000                                                                       # Waits 5 seconds to display values.
-      SET_DISPLAY_TEXT MSG="Heating chamber to: {target_chamber}c"  # Displays info
+      SET_DISPLAY_TEXT MSG="L: {BED_LEFT}c R: {BED_RIGHT}c"                           # Display Heater info. (Debugging)
+      G4 P5000                                                                        # Waits 5 seconds to display values.
+      SET_DISPLAY_TEXT MSG="Heating chamber to: {target_chamber}c"                    # Displays info for heating the chamber
       TEMPERATURE_WAIT SENSOR="temperature_sensor chamber" MINIMUM={target_chamber}   # Waits for chamber to reach desired temp
 
   # If the bed temp is not over 90c, then it skips the heatsoak and just heats up to set temp with a 5min soak
     {% else %}
-      # SET_DISPLAY_TEXT MSG="Above 90c Loading"                                       # Display Heater info. (Debugging)
+      # SET_DISPLAY_TEXT MSG="Heater below 90c Loading"                                # Display Heater info. (Debugging)
       # G4 P10000                                                                      # Waits 10 seconds to display values.
       #Check and enable the required heatbeds
           #Heatbed Left  x0,y0  x1,y1
             {% if ((C > x0) and (D > y0) and (A < x1) and (B < y1)) %}
                 {% set BED_LEFT = params.BED_TEMP | default(0) | float %}
-                SET_HEATER_TEMPERATURE HEATER=heater_bed_left TARGET={BED_LEFT}        # Sets the target temp for the bed
+                SET_HEATER_TEMPERATURE HEATER=heater_bed_left TARGET={BED_LEFT}        # Enables the Left Bed
             {% endif %}
           #Heatbed Right  x1,y0  x2,y1
             {% if ((C > x1) and (D > y0) and (A < x2) and (B < y1)) %}
                 {% set BED_RIGHT = params.BED_TEMP | default(0) | float %}
-                SET_HEATER_TEMPERATURE HEATER=heater_bed_right TARGET={BED_RIGHT}      # Sets the target temp for the bed
+                SET_HEATER_TEMPERATURE HEATER=heater_bed_right TARGET={BED_RIGHT}      # Enables the Right Bed
             {% endif %}
       SET_DISPLAY_TEXT MSG="Waiting 2 minutes to stabilize."                           # Waits 2 min for the bedtemp to stabilize
       G4 P120000                                      
@@ -96,9 +96,9 @@ gcode:
 
   ##  Uncomment for V2 (Quad gantry level AKA QGL)
   SET_DISPLAY_TEXT MSG="Leveling Z"      # Displays info
-  #STATUS_LEVELING                 # Sets SB-leds to leveling-mode
-  quad_gantry_level               # Levels the buildplate via QGL
-  G28 Z                           # Homes Z again after QGL
+  #STATUS_LEVELING                       # Sets SB-leds to leveling-mode
+  quad_gantry_level                      # Levels the buildplate via QGL
+  G28 Z                                  # Homes Z again after QGL
 
   ##  Uncomment for bed mesh (2 of 2)
   SET_DISPLAY_TEXT MSG="Loading Bed Mesh"     # Displays info
