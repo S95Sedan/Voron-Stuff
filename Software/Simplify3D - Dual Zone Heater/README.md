@@ -1,9 +1,9 @@
 Just wanted to add this incase someone else is setting up something similair.
 
-My own code is based on this page;
+My own code is based on this page;<br>
 https://klipper.discourse.group/t/automatic-control-of-rectangular-heatbed-sections-based-on-print-area/3252
 
-This code mainly started as i always wanted a dual zone heater setup, for more flexibility.
+This code mainly started as i always wanted a dual zone heater setup, for more flexibility.<br>
 Shown below is a picture of my current bed setup;
 ![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Software/Simplify3D%20-%20Dual%20Zone%20Heater/images/image_01.jpg)
 
@@ -19,7 +19,7 @@ Simplify3D - End script:
 PRINT_END
 ```
 
-Klipper - Start Script: 
+Klipper - Start Script:<br>
 (Based on; https://github.com/jontek2/A-better-print_start-macro )
 ```
 [gcode_macro PRINT_START]
