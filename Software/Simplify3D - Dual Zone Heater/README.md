@@ -30,7 +30,8 @@ gcode:
   {% set x_wait = printer.toolhead.axis_maximum.x|float / 2 %}
   {% set y_wait = printer.toolhead.axis_maximum.y|float / 2 %}
 
-#Set the coordinates of the heatbed sections
+# Set the coordinates of the heatbed sections.
+# My current bed is 400x350 (x/y) with 395x350 (x/y) of it usable.
   {% set x0 = 0 %}       # Minimum bed size - X Axis
   {% set x1 = 197 %}     # Halfway
   {% set x2 = 395 %}     # Maximum bed size - X Axis
