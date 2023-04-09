@@ -5,7 +5,7 @@ https://klipper.discourse.group/t/automatic-control-of-rectangular-heatbed-secti
 
 This code mainly started as i always wanted a dual zone heater setup, for more flexibility.<br>
 Shown below is a picture of my current bed setup;
-![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Software/Simplify3D%20-%20Dual%20Zone%20Heater/images/image_01.jpg)
+![](https://github.com/S95Sedan/Voron-Stuff/blob/main/Software/Dual%20Zone%20Heater/images/image_01.jpg)
 
 Simplify3D - Start script:
 ```
