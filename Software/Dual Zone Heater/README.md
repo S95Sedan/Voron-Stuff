@@ -1,4 +1,6 @@
-Just wanted to add this incase someone else is setting up something similair.
+- Edit 10-04-2023: Changed the split() parameters from , to - as Simplify3D doesnt work with a ,<br>
+
+Just wanted to add this incase someone else is setting up something similair.<br>
 
 My own code is based on this page;<br>
 https://klipper.discourse.group/t/automatic-control-of-rectangular-heatbed-sections-based-on-print-area/3252
@@ -11,7 +13,7 @@ Simplify3D - Start script:
 ```
 M104 S0 ; Stops sending temp waits separately
 M140 S0
-PRINT_START EXTRUDER=[extruder0_temperature] BED_TEMP=[bed0_temperature] AREA_START=[build_min_x],[build_min_y] AREA_END=[build_max_x],[build_max_y]
+PRINT_START EXTRUDER=[extruder0_temperature] BED_TEMP=[bed0_temperature] AREA_START=[build_min_x]-[build_min_y] AREA_END=[build_max_x]-[build_max_y]
 ```
 
 Simplify3D - End script:
@@ -42,11 +44,11 @@ gcode:
 #Get parameters from Slicer
   {% set BED_TEMP = params.BED_TEMP|default(50)|float %}       # This gets the BED_TEMP from the slicer)
   {% if params.AREA_START and params.AREA_END %}               # This gets the AREA_START and AREA_END from the slicer)
-      {% set A = params.AREA_START.split(",")[0]|float %}
-      {% set B = params.AREA_START.split(",")[1]|float %}
+      {% set A = params.AREA_START.split("-")[0]|float %}
+      {% set B = params.AREA_START.split("-")[1]|float %}
 
-      {% set C = params.AREA_END.split(",")[0]|float %}
-      {% set D = params.AREA_END.split(",")[1]|float %}
+      {% set C = params.AREA_END.split("-")[0]|float %}
+      {% set D = params.AREA_END.split("-")[1]|float %}
   {% endif %}
 
 # Homes the printer, sets absolute positioning and updates the Stealthburner leds.
