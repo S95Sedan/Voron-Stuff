@@ -1,4 +1,4 @@
-- Edit 10-04-2023: Changed the split() parameters from , to - as Simplify3D doesnt work with a ,<br>
+- Edit 10-04-2023: Changed the split() parameters from , to - as Simplify3D doesnt save it otherwise.<br>
 
 Just wanted to add this incase someone else is setting up something similair.<br>
 
