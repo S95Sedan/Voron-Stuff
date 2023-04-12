@@ -22,7 +22,7 @@ Simplify3D - End script:
 PRINT_END
 ```
 
-Flipper - Heatbed Zones;
+Klipper - Heatbed Zones;
 ```
 [gcode_macro HEATBED_ZONES]
 gcode:
